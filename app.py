@@ -17,18 +17,30 @@ with col_left:
     with st.container(border=True): 
         st.write(" 標題：開學典禮") 
         st.write(" 時間：09:00")
+        
         title = st.text_input("行程主旨",placeholder="請填寫會議名稱...")
+        
         my_color = st.color_picker("挑選辨識顏色","#1A73E8")
+
+    view = st.segmented_control("檢視模式",["月視角", "週視角"],default="月視角")
+    
+    tag = st.pills("行程屬性",["#工作", "#家庭", "#緊急"])
+
+    note = st.text_area("行程備忘錄 / 詳細說明")
     
 
         
 with col_right: 
     st.write("###  設定區") 
     st.button("控制項放右邊")
+    
     st.write("###  看板區") 
-    st.info("主要行程訊息放中間")
+    st.info("主要行程訊息放這邊")
+    
     today = st.date_input("選擇日期",datetime.date.today())
+    
     meeting_time = st.time_input("選擇時間")
+    
     @st.dialog("系統公告")
     def show_alert():
         st.write("本週作業請確認 requirements.txt 有正確設定！")
