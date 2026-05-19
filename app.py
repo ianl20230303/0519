@@ -26,5 +26,5 @@ with col_right:
     st.button("控制項放右邊")
 
     with 
-        st.expander("查看進階提醒參數設定"):
-        st.write("這裡是發信伺服器的底層設定...")"
+        st.expander("查看進階提醒參數設定")
+        st.write("這裡是發信伺服器的底層設定...")
