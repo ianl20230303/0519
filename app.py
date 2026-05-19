@@ -22,11 +22,11 @@ with col_left:
         
         my_color = st.color_picker("挑選辨識顏色","#1A73E8")
 
-    view = st.segmented_control("檢視模式",["月視角", "週視角"],default="月視角")
+        view = st.segmented_control("檢視模式",["月視角", "週視角"],default="月視角")
     
-    tag = st.pills("行程屬性",["#工作", "#家庭", "#緊急"])
+        tag = st.pills("行程屬性",["#工作", "#家庭", "#緊急"])
 
-    note = st.text_area("行程備忘錄 / 詳細說明")
+        note = st.text_area("行程備忘錄 / 詳細說明")
     
 
         
