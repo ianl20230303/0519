@@ -8,7 +8,7 @@ with st.sidebar:
     st.write("###  行事曆群組")
     st.radio("選擇群組", ["工作", "家庭"])
 
-col_left, col_center, col_right = st.columns([1, 2, 1.2], gap="large")
+col_left, col_right = st.columns(2, gap="large")
 
 with col_left: 
     st.write("###  新增區") 
@@ -18,22 +18,23 @@ with col_left:
         st.write(" 標題：開學典禮") 
         st.write(" 時間：09:00")
         title = st.text_input("行程主旨",placeholder="請填寫會議名稱...")
-        today = st.date_input("選擇日期",datetime.date.today())
-        meeting_time = st.time_input("選擇時間")
         my_color = st.color_picker("挑選辨識顏色","#1A73E8")
 
 with col_center: 
-    st.write("###  看板區") 
-    st.info("主要行程訊息放中間")
-    @st.dialog("系統公告")
-    def show_alert():
-        st.write("本週作業請確認 requirements.txt 有正確設定！")
-        if st.button("查看公告"): show_alert()
+    
 
         
 with col_right: 
     st.write("###  設定區") 
     st.button("控制項放右邊")
+    st.write("###  看板區") 
+    st.info("主要行程訊息放中間")
+    today = st.date_input("選擇日期",datetime.date.today())
+    meeting_time = st.time_input("選擇時間")
+    @st.dialog("系統公告")
+    def show_alert():
+        st.write("本週作業請確認 requirements.txt 有正確設定！")
+        if st.button("查看公告"): show_alert()
 
     with st.expander("查看進階提醒參數設定"):
         st.write("這裡是發信伺服器的底層設定...")
