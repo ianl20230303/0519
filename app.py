@@ -19,8 +19,6 @@ with col_left:
         st.write(" 時間：09:00")
         title = st.text_input("行程主旨",placeholder="請填寫會議名稱...")
         my_color = st.color_picker("挑選辨識顏色","#1A73E8")
-
-with col_center: 
     
 
         
