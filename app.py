@@ -19,10 +19,10 @@ with col_left:
 with col_center: 
     st.write("###  看板區") 
     st.info("主要行程訊息放中間")
-        @st.dialog("系統公告")
-        def show_alert():
-            st.write("本週作業請確認 requirements.txt 有正確設定！")
-            if st.button("查看公告"): show_alert()
+    @st.dialog("系統公告")
+    def show_alert():
+        st.write("本週作業請確認 requirements.txt 有正確設定！")
+        if st.button("查看公告"): show_alert()
 
         
 with col_right: 
