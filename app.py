@@ -2,13 +2,6 @@ import streamlit as st
 
 st.set_page_config(page_title="微型 TimeTree", layout="wide")
 
-@st.dialog("系統公告")
-def show_alert():
-    st.write("本週作業請確認 requirements.txt 有正確設定！")
-    if st.button("查看公告"): show_alert()
-
-
-
 with st.sidebar:
     st.write("###  行事曆群組")
     st.radio("選擇群組", ["工作", "家庭"])
@@ -23,10 +16,14 @@ with col_left:
         st.write(" 標題：開學典禮") 
         st.write(" 時間：09:00")
 
-
 with col_center: 
     st.write("###  看板區") 
     st.info("主要行程訊息放中間")
+        @st.dialog("系統公告")
+        def show_alert():
+            st.write("本週作業請確認 requirements.txt 有正確設定！")
+            if st.button("查看公告"): show_alert()
+
         
 with col_right: 
     st.write("###  設定區") 
