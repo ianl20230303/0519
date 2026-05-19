@@ -12,6 +12,10 @@ with col_left:
     st.write("###  新增區") 
     st.button("按鈕放左邊")
 
+with st.container(border=True): 
+    st.write(" 標題：開學典禮") 
+    st.write(" 時間：09:00"
+
 with col_center: 
     st.write("###  看板區") 
     st.info("主要行程訊息放中間")
