@@ -40,6 +40,10 @@ with col_right:
     today = st.date_input("選擇日期",datetime.date.today())
     
     meeting_time = st.time_input("選擇時間")
+
+    is_open = st.toggle("開啟 24H 郵件自動發信通知",value=True)
+
+    mins = st.number_input("行程開始前幾分鐘提醒？",min_value=0, max_value=60,value=15)
     
     @st.dialog("系統公告")
     def show_alert():
