@@ -36,6 +36,9 @@ with col_right:
     
     st.write("###  看板區") 
     st.info("主要行程訊息放這邊")
+
+    with st.expander("查看進階提醒參數設定"):
+        st.write("這裡是發信伺服器的底層設定...")
     
     today = st.date_input("選擇日期",datetime.date.today())
     
@@ -50,8 +53,6 @@ with col_right:
         st.write("本週作業請確認 requirements.txt 有正確設定！")
         if st.button("查看公告"): show_alert()
 
-    with st.expander("查看進階提醒參數設定"):
-        st.write("這裡是發信伺服器的底層設定...")
 
 
 st.write("上面是大標題")
