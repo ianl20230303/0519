@@ -14,7 +14,7 @@ with col_left:
 
 with st.container(border=True): 
     st.write(" 標題：開學典禮") 
-    st.write(" 時間：09:00"
+    st.write(" 時間：09:00")
 
 with col_center: 
     st.write("###  看板區") 
