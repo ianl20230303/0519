@@ -70,6 +70,6 @@ with r:
                 st.markdown(f"📅 **日期：** {event['date']} | ⏰ **時間：** {event['time']}")
                 
                 # 加一個小小的刪除按鈕（選配，點擊可刪除該行程）
-                if st.button("🗑️ 刪除", key=f"del_{idx}", size="small"):
+                if st.button("🗑️ 刪除", key=f"del_{idx}"):
                     st.session_state.group_events[mode].remove(event)
                     st.rerun()
