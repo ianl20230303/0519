@@ -15,7 +15,7 @@ with col_left:
     with st.container(border=True): 
         st.write(" 標題：開學典禮") 
         st.write(" 時間：09:00")
-            title = st.text_input("行程主旨",placeholder="請填寫會議名稱...")
+        title = st.text_input("行程主旨",placeholder="請填寫會議名稱...")
 
 with col_center: 
     st.write("###  看板區") 
