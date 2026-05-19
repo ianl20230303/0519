@@ -31,3 +31,15 @@ with col_right:
 
     with st.expander("查看進階提醒參數設定"):
         st.write("這裡是發信伺服器的底層設定...")
+
+
+st.write("上面是大標題")
+st.divider()
+st.write("下面是內容區塊")
+
+st.button("按鈕 A")
+st.write("")  # 塞入一行空白間距
+st.button("按鈕 B")
+
+with st.popover("快速進階篩選"):
+    st.checkbox("隱藏已過期行程")
