@@ -18,4 +18,4 @@ with col_center:
 
 with col_right: 
     st.write("###  設定區") 
-    st.button("控制項放右邊"
+    st.button("控制項放右邊")
