@@ -18,8 +18,8 @@ with col_left:
         st.write(" 標題：開學典禮") 
         st.write(" 時間：09:00")
         
+    with st.container(border=True): 
         title = st.text_input("行程主旨",placeholder="請填寫會議名稱...")
-        
         my_color = st.color_picker("挑選辨識顏色","#1A73E8")
 
         view = st.segmented_control("檢視模式",["月視角", "週視角"],default="月視角")
