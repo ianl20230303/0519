@@ -20,8 +20,10 @@ with col_left:
         
     with st.container(border=True): 
         title = st.text_input("行程主旨",placeholder="請填寫會議名稱...")
+        
         my_color = st.color_picker("挑選辨識顏色","#1A73E8")
 
+    with st.container(border=True): 
         view = st.segmented_control("檢視模式",["月視角", "週視角"],default="月視角")
     
         tag = st.pills("行程屬性",["#工作", "#家庭", "#緊急"])
